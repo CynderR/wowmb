@@ -1,0 +1,8 @@
+#Requires AutoHotkey v2.0
+ac1 := {
+    name1: {u: '', p: ''},
+    name2: {u: '', p: ''},
+    name3: {u: '', p: ''},
+    name4: {u: '', p: ''},
+    name5: {u: '', p: ''}
+}
