@@ -8,30 +8,34 @@ MoveWindow(data, name) {
 Signin() {
     For name, data in ac1.OwnProps() {
         WinActivate(name)
-        KeyWait()
+        KeyDelay()
         Send data.u
-        KeyWait()
+        KeyDelay()
         Send A_Tab
-        KeyWait()
+        KeyDelay()
         Send data.p
         sleep(4000)
         Send('{Enter}')
     }
-
+    KeyDelay()
     SelectCharacter()
 }
 
 WindowSettup() {
     For name, data in screens.OwnProps() {
         OpenWindowRename(name)
+        Sleep 1000
+        WinActivate(name)
         MoveWindow(data, name)
     }
+     Sleep 1000
+     Signin()
 }
 
 OpenWindowRename(name) {
     Run('C:\Program Files (x86)\World of Warcraft 3.3.5a\wow.exe')
-    Sleep 1000
-    if WinWait("World of Warcraft", , 3)
+    Sleep 3000
+    if WinWait("World of Warcraft", , 10)
         WinSetTitle(name, "World of Warcraft")
     else
         MsgBox "Timeout. 1000 might be too slow"
@@ -40,7 +44,9 @@ OpenWindowRename(name) {
 SelectCharacter() {
     For name, data in screens.OwnProps() {
         WinActivate(name)
-        
+        sleep(1000)
         Send('{Enter}')
     }
 }
+
+
