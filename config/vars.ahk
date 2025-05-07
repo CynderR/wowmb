@@ -9,9 +9,49 @@ Ateam := {
 	
 
 mageteam :={
-    shadowing: {x: -8,	y: -8,	w: 2576,	h: 1408, class: "priest", blast:{opener: ''}, buffs:{self:[],party:['g']}, role:'heal', heals: {shield:'5', quick: '6'}, drink:'8', horse:'{Ctrl Down}p{Ctrl Up}', accept: ''},
+    shadowing: {
+        x: -8,	y: -8,
+        w: 2576,h: 1408, 
+        class: "priest", 
+        role:'heal', 
+        drink:'8', 
+        accept: '',
+        horse:'{Ctrl Down}p{Ctrl Up}',
+        buffs:{
+            self:[],
+            party:['g']
+        }, 
+        heals: {
+            shield:'5',
+            quick: '6'
+        }, 
+        blast:{opener: ''}
+    },
 
-    flamedrinker: {x: 2552,	y: 0,	w: 1109,	h: 722, class:'mage',blast:{long: '2', instant: '7', fnova:'{Alt DOWN}i{Alt UP}',arcaneBlast:'j', blizzard:'{Alt DOWN}n{Alt UP}'}, blink:'{Alt DOWN}b{Alt UP}', buffs:{self:['3'],party:[]}, role: 'dps', drink:'8',  horse:'{Ctrl Down}p{Ctrl Up}', accept: '=', waterEle: '{Ctrl Down}o{Ctrl Up}', sheep: '{Ctrl Down}i{Ctrl Up}'},
+    flamedrinker: {
+        x: 2552, y: 0,	
+        w: 1109, h: 722, 
+        class:'mage',
+        role: 'dps', 
+        drink:'8',
+        horse:'{Ctrl Down}p{Ctrl Up}', 
+        accept: '=', 
+        waterEle: '{Ctrl Down}o{Ctrl Up}', 
+        sheep: '{Ctrl Down}i{Ctrl Up}',
+        blink:'{Alt DOWN}b{Alt UP}',
+        buffs:{
+            self:['3'],
+            party:[]
+        }, 
+        blast:{
+            long: '2', 
+            instant: '7', 
+            fnova:'{Alt DOWN}i{Alt UP}',
+            arcaneBlast:'j',
+            blizzard:'{Alt DOWN}n{Alt UP}'
+        }
+    },
+
     flameguard: {x: 4008,	y: 668,	w: 1123,	h: 731, class:'mage',blast:{long: '2', instant: '7', fnova:'{Alt DOWN}i{Alt UP}',arcaneBlast:'j', blizzard:'{Alt DOWN}n{Alt UP}'}, blink:'{Alt DOWN}b{Alt UP}', buffs:{self:['3'],party:['5']}, role: 'dps', drink:'8',  horse:'{Ctrl Down}p{Ctrl Up}', accept: '=', waterEle: '{Ctrl Down}o{Ctrl Up}', sheep: '{Ctrl Down}i{Ctrl Up}'},
     flamesmelter: {x: 2550,	y: 673,	w: 1112,	h: 724, class:'mage',blast:{long: '2', instant: '7', fnova:'{Alt DOWN}i{Alt UP}',arcaneBlast:'j', blizzard:'{Alt DOWN}n{Alt UP}'}, blink:'{Alt DOWN}b{Alt UP}', buffs:{self:['3'],party:[]}, role: 'dps', drink:'8',  horse:'{Ctrl Down}p{Ctrl Up}', accept: '=', waterEle: '{Ctrl Down}o{Ctrl Up}', sheep: '{Ctrl Down}i{Ctrl Up}'},
     flametamer: {x: 4006,	y:0,	w: 1122,	h: 730, class:'mage',blast:{long: '2', instant: '7', fnova:'{Alt DOWN}i{Alt UP}',arcaneBlast:'j', blizzard:'{Alt DOWN}n{Alt UP}'}, blink:'{Alt DOWN}b{Alt UP}', buffs:{self:['3'],party:[]}, role: 'dps', drink:'8',  horse:'{Ctrl Down}p{Ctrl Up}', accept: '=', waterEle: '{Ctrl Down}o{Ctrl Up}', sheep: '{Ctrl Down}i{Ctrl Up}'},
